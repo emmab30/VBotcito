@@ -1,0 +1,73 @@
+iframe {
+    display: block;
+    margin: 10px auto;
+}
+
+/* General styles */
+
+$primary-color: #0054ff;
+
+.c-primary {
+    color: $primary-color;
+}
+
+.home .redeem_box {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 2px solid rgba(241, 52, 85, .05);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form.home {
+    display: flex;
+    flex-direction: row;
+
+    input[type=text] {
+        background-color: rgba(0,0,0,0.005);
+        border: 1px solid rgba(0,0,0,.05) !important;
+        font-weight: bold;
+    }
+
+    input[type=submit] {
+        border: 0;
+        height: 50px;
+        font-size: 16px;
+        padding: 0 20px;
+        background: $primary-color;
+        color: #fff;
+        transition: 0.3s;
+        border-radius: 0 5px 5px 0;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        & {
+            display: block;
+        }
+
+        input[type=submit], input[type=text] {
+            width: 100%;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.member {
+    border-radius: 5px;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+
+  margin-top: 10px;
+}
